@@ -7,7 +7,7 @@ import dataTC02 from '../testdata/dt_stay/dt_TC_02.json' assert { type: "json" }
 
 
 describe('Booking.com Test Suite', () => {
-    /* it('TC01 Verify user can select Language and Currency type', async () => {
+     it('TC01 Verify user can select Language and Currency type', async () => {
 
         //navigate to website
         browser.url(config.DefaultURL);
@@ -23,16 +23,22 @@ describe('Booking.com Test Suite', () => {
         await LIB_HomePage.bc_ClickStayButton();
 
     }
-    ); */
+    );  
 
     it('TC02 Verify user can select City, Duration and Occupancy on Stay', async () => {
+ 
 
         //Typelocation in “Where are you going” text field. (E.g.: - Kandy)
         await LIB_Search.bc_EnterLocation(dataTC02.location);
 
-        //Select the Check-in and Checkout
-        
+        //console.log(await bc_EnterLocation.getValue());
 
+        //Select the Check-in and Checkout
+        await LIB_Search.bc_EnterCheckInCheckOutDates(dataTC02.daysforcheckout);
+        //await LIB_Search.bc_EnterCheckInCheckOutDates(dataTC02.checkindate);
+
+        //Select 1 adults and 0 children and 1 room and verify it
+        await LIB_Search.bc_EnterOccupancyAndVerify();
     
 
 

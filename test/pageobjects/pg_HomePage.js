@@ -27,6 +27,10 @@ class PGHomePage {
         return $('//a[@id="accommodations"]');
     }
 
+    get btn_Logo(){
+        return $('//a[@aria-label="Booking.com"]');
+    }
+
 
 }
 

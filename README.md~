@@ -1,1 +1,35 @@
 # Automation-Assessment
+# Author: Sanduni Mendis
+
+How to run the code: 
+01. Download the code from github.
+02. Unzip the downloaded project.
+03. Move/Save to a relevant location.
+04. Open the project via your source code /IDE.
+05. Once the project is open, you can execute the Test Suite by running below command on the Terminal.
+06. Command: "npm run wdio"
+
+Prerequisites: 
+IDE should be installed
+Node.js should be installed
+
+
+
+Challenges/Issues faced, and the workarounds applied. 
+01. As I was new to the tech stack it was kind of challenge and overcame it by reffering to freely available tutorials and having discussions with QE collegues. 
+
+02. When Initially started the project was getting a "SyntaxError: Cannot use import statement outside a module". This was sorted by removing deafualt pages which got added when creating the project.
+Also to ensure it is not related to compiler issue which commonly comes with ES6, added Bable as well. 
+
+03. When imported json files got an error saying type is not supported. It was sorted by adding "assert { type: "json" };" at the end of the import file path.
+ex: import dataTC02 from '../testdata/dt_stay/dt_TC_02.json' assert { type: "json" };
+
+04. It was challenging to figure out the logic to support clause "Should be further day from the currently system date and different between to dates should be 2 days". Found the sloution by googling to use Moment to get current date. 
+
+05. Was struggling due to the TypeError: "elem[prop] is not a function". First thought it was related to xpaths, but then noticed it was due to spelling mistake in "click". When checked throughly noticed that i was omitted in click.
+
+06. 
+
+
+
+
