@@ -16,7 +16,7 @@ Node.js should be installed
 
 
 Challenges/Issues faced, and the workarounds applied. 
-01. As I was new to the tech stack it was kind of challenge and overcame it by reffering to freely available tutorials and having discussions with QE collegues. 
+01. As I was new to the tech stack it was kind of challenging and overcame it by reffering to freely available tutorials and having discussions with QE collegues. 
 
 02. When Initially started the project was getting a "SyntaxError: Cannot use import statement outside a module". This was sorted by removing deafualt pages which got added when creating the project.
 Also to ensure it is not related to compiler issue which commonly comes with ES6, added Bable as well. 
@@ -28,7 +28,9 @@ ex: import dataTC02 from '../testdata/dt_stay/dt_TC_02.json' assert { type: "jso
 
 05. Was struggling due to the TypeError: "elem[prop] is not a function". First thought it was related to xpaths, but then noticed it was due to spelling mistake in "click". When checked throughly noticed that i was omitted in click.
 
-06. 
+06. It was a hassle to find an element to be displayed. Then came across Scroll function and issue was sorted. 
+
+07. Consumed much time to figure out how to get the wanted element from a list. Sorted it by using $$ command.  
 
 
 
